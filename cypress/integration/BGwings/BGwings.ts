@@ -36,9 +36,13 @@ When('the user clicks the "Next" arrow', () => {
   cy.get('.next-page-0').click();
 });
 
+When('the user clicks the "Last page" arrow', () => {
+  cy.get('.last-page-0').click();
+});
+
 Then('the {string} page is displayed', (num) => {
   cy.get('.bwg_current_page').should('have.value', num);
-  cy.url().should('include', `page_number_0=${num}`);
+//  cy.url().should('include', `page_number_0=${num}`);
 });
 
 Then('the {string} is selected', (language) => {
@@ -75,4 +79,8 @@ When('the user clicks the {string} event photo', (eventName) => {
 Then('the {string} events photos should be displayed', (eventName) => {
   cy.get('div').should('contain', eventName).contains(eventName).next('div')
     .should('have.class', 'bwg-masonry-thumbnails');
+});
+
+When('the user clicks the "Back" button', () => {
+  cy.get('.bwg_back').click();
 });
