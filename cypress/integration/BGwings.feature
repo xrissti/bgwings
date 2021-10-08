@@ -68,3 +68,16 @@ Scenario: The user can switch the pages
   Then the "2" page is displayed
   And the user clicks the "Next" arrow
   Then the "3" page is displayed
+
+@automated
+Scenario: The Back arrow returns to the previous page
+  Given the user navigates to the "Gallery" page
+  And the user clicks "2016" in gallery drop down
+  And the "Gallery" page with the "2016" gallery is displayed
+  And the user clicks the "AN-2 IN 2016" event photo
+  And the "AN-2 IN 2016" events photos should be displayed
+  And the user scrolls to the "bottom" of the page
+  And the user clicks the "Last page" arrow
+  And the "3" page is displayed
+  When the user clicks the "Back" button
+  Then the "1" page is displayed
