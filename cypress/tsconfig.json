@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "target": "es2015",
+    "module": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "types": ["cypress"]
+  },
+  "include": [
+    "node_modules/cypress", 
+    "node_modules/k6-html-reporter",  
+    "**/**/*.ts", 
+    "integration/non-functional-testing/k6-reporter.js",
+    "node_modules/@shelex/cypress-allure-plugin/reporter"
+  ],
+  "type": "module"
+}
