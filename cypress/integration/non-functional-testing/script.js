@@ -6,9 +6,9 @@ export let options = {
   duration: '30s',
 };
 export default function () {
-  const cypressConfig = Cypress.config();
+//  const cypressConfig = Cypress.config();
 
-  http.get(cypressConfig.baseUrl);
+  http.get('https://bgwings.net/');
   sleep(1);
 }
 
