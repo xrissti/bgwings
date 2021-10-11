@@ -1,5 +1,5 @@
 ## k6
-* `k6 run script.js` will run load tests (cmd in folder \Desktop\Projects\Cypress\BGWings\cypress\integration\non-functional-testing)
+* `npx k6 run script.js` will run load tests (cmd in folder \Desktop\Projects\Cypress\BGWings\cypress\integration\non-functional-testing)
 * `node k6-reporter.js` will generate report HTML
 
 ## Allure test report

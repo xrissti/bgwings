@@ -2,7 +2,7 @@
 import "./libs/shim/core.js";
 
 export let options = {
-  vus: 50,
+  vus: 10,
   duration: '30s',
   maxRedirects: 4
 };
